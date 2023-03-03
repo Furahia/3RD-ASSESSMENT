@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import './components/Style.css'
+import Main from './components/Main.js'
+
+// function App() {
+
+//   let [total, setTotal] = useState(0);
+
+//   function enterNumbers() {
+//     let numbers = prompt("Enter numbers separated by a comma")
+//     numbers.split(",").forEach(number => {
+//       setTotal(prevState => prevState.total = prevState.total + Number(number));
+//     })
+//     console.log(total)
+//   }
+     
+//   return (
+//  <div className="App">
+//     <button onClick={enterNumbers} > Enter numbers </button>
+
+//     <h3>Total = {total}</h3>
+
+//   </div>
+// )
+// };
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <div><Main/></div>
+  )
 }
 
-export default App;
+export default App
